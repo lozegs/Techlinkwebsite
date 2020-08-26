@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="main.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/056401314e.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- Header bar -->
+  <div class="header">
+    <img class="logo" src="logo.png" alt="Techlink logo" width="50" height="50">
+    <h4>Techlink - for women in tech to connect</h4>
+
+     <div class="openBtn">
+      <button class="openButton" onclick="openForm()"> <strong>Log In</strong></button>
+    </div>
+    <div class="loginPopup">
+      <div class="formPopup" id="popupForm">
+        <form action="/action_page.php" class="formContainer">
+          <h2>Please Log in</h2>
+          <label for="email">
+            <strong>E-mail</strong>
+          </label>
+          <input type="text" id="email" placeholder="Your Email" name="email" required>
+          <label for="psw">
+            <strong>Password</strong>
+          </label>
+          <input type="password" id="psw" placeholder="Your Password" name="psw" required>
+          <button type="submit" class="btn">Log in</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function openForm() {
+        document.getElementById("popupForm").style.display = "block";
+      }
+      function closeForm() {
+        document.getElementById("popupForm").style.display = "none";
+      }
+    </script>
+
+    <nav>
+      <ul>
+        <li><a class="nav" href="index.html">Home</a></li>
+        <li><a class="nav" href="links.html">Links</a></li>
+        <li><a class="nav" href="forum.html">Forum</a></li>
+        <li><a class="nav" href="contact.html">Contact Us</a></li>
+        <li>
+          <form class="search" action="/action_page.php">
+            <input type="text" placeholder="Search..." name="search">
+            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </form>
+          </li>
+      </ul>
+    </nav>
+  </div>
+
+
+<!-- Header intro -->
+<div class="Askforum">
+	<h2 class="title">Thank you!</h2>
+   <h3> Your question has been submitted. </h3>
+</div>
+
+
+
+</body>
+
+<footer>
+  <p>© 2020 Techlink. All Rights Reserved </p>
+  <p>Authors: Natalia, Lauren, Melanie and Daisy </p>
+  <div class="socials">
+    <a href="https://www.instagram.com/" <i class="fab fa-instagram" aria-hidden="true"></i></a>
+    <a href="https://www.facebook.com/" <i class="fab fa-facebook" aria-hidden="true"></i></a>
+    <a href="https://www.twitter.com/" <i class="fab fa-twitter" aria-hidden="true"></i></a>
+    <a href="" <i class="fas fa-envelope" aria-hidden="true"></i></a>
+  </div>
+  </footer>
+</html>
